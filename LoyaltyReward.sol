@@ -78,7 +78,7 @@ contract StarPoint {
     
     function reward(address _member, uint256 _value) public onlyPartner {
         require(balanceOf[msg.sender] >= _value,"not enough balance");
-        (members[_member].isMember, "address is not a member");
+        require(members[_member].isMember, "address is not a member");
         balanceOf[msg.sender] = balanceOf[msg.sender] - _value;
         balanceOf[_member] = balanceOf[_member] + _value;
         emit Reward(msg.sender, _member, _value);
