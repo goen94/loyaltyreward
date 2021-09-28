@@ -1,5 +1,8 @@
 # StarPOINT Loyalty Reward
 
+This is Blockchain Loyalty Reward Program that can be used to rewarding member a token.
+
+
 ## Event
 
 **Approval**
